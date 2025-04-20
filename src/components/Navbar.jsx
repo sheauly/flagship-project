@@ -28,7 +28,7 @@ const Navbar = () => {
       <li><NavLink className={({isActive})=> ( isActive ? 'text-indigo-600': '')} to='/'>Home</NavLink></li>
       <li><NavLink className={({isActive})=> ( isActive ? 'text-indigo-600': '')}  to='/about'>About</NavLink></li>
       <li><NavLink  className={({isActive})=> ( isActive ? 'text-indigo-600': '')}  to='/cart'><FaCartShopping size={20}/></NavLink></li>
-      <li><NavLink className={({ isActive }) => (isActive ? 'text-indigo-600' : '')} to='/favorite'><FaBookSkull size={20} /></NavLink></li>
+      <li><NavLink className={({ isActive }) => (isActive ? 'text-indigo-600' : '')} to='/favorites'><FaBookSkull size={20} /></NavLink></li>
       
       
     </ul>

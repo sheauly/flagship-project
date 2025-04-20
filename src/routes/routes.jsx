@@ -7,6 +7,7 @@ import About from "../pages/About";
 import Favorite from "../pages/Favorite";
 import PhoneDetails from "../pages/PhoneDetails";
 import ErrorPages from "../pages/ErrorPages";
+import ShoppingCart from "./ShoppingCart";
 
 export const router = createBrowserRouter([
   {
@@ -17,7 +18,12 @@ export const router = createBrowserRouter([
             {
                 index:true,
                 // path: '/',
-                Component: Home,
+              Component: Home,
+              loader:()=> fetch('/phones.json')
+          },
+          {
+            path: '/cart',
+            Component: ShoppingCart,
             },
       {
         path: '/favorites',
